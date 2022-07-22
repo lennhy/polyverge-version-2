@@ -1,9 +1,9 @@
 // Importing modules
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import NavHeader from "./components/NavHeader";
 import Landing from "./components/Landing";
 import Gallery from "./components/Gallery";
+
 
 function App() {
     // usestate for setting a javascript
@@ -34,15 +34,15 @@ function App() {
   
     return (
         <div className="App">
+            <NavHeader></NavHeader>
             <header className="App-header">
-                <h1>React and flask</h1>
+                <h1>Polyverge</h1>
                 {/* Calling a data from setdata for showing */}
                 <p>{data.name}</p>
                 <p>{data.age}</p>
                 <p>{data.date}</p>
                 <p>{data.programming}</p>
             </header>
-            <NavHeader></NavHeader>
             <Landing></Landing>
             <Gallery></Gallery>
         </div>
