@@ -1,4 +1,6 @@
 import { Component } from 'react'
+import { Link } from "react-router-dom";
+
 import './NavHeader.css';
 
 class NavHeader extends Component {
@@ -11,10 +13,9 @@ class NavHeader extends Component {
     render() {
       return (
         <ul className="nav">
-          <li>Home</li>
-          <li>Art Gallery</li>
-          <li>About</li>
-          <li>Cart</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/cart">Cart</Link></li>
         </ul>
         // <button
         //   className="square"
